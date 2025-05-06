@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lottery - Admin Dashboard</title>
+  <!-- TailwindCSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- AnimeJS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <!-- Ethers.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold text-center mb-8">Decentralized Lottery - Admin</h1>
+
+    <!-- Wallet Connection -->
+    <div id="wallet-section" class="text-center mb-8">
+      <button id="connect-wallet" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Connect Wallet</button>
+      <p id="wallet-status" class="mt-2 text-gray-700"></p>
+    </div>
+
+    <!-- Status Message -->
+    <div id="status-message" class="text-center mb-4 text-green-600 hidden"></div>
+
+    <!-- Admin Interface -->
+    <div id="admin-section" class="hidden bg-white p-6 rounded shadow-md">
+      <h2 class="text-2xl font-semibold mb-4">Admin Dashboard</h2>
+      <div class="grid grid-cols-2 gap-4 mb-4">
+        <div>
+          <p><strong>Ticket Price:</strong> <span id="ticket-price"></span> ETH</p>
+          <p><strong>Participants:</strong> <span id="participants-count"></span></p>
+        </div>
+        <div>
+          <p><strong>Prize Pool:</strong> <span id="prize-pool"></span> ETH</p>
+          <p><strong>Winner:</strong> <span id="winner"></span></p>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <button id="trigger-draw" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Trigger Draw</button>
+        <button id="distribute-prize" class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 transition">Distribute Prize</button>
+        <button id="reset-lottery" class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 transition">Reset Lottery</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="lottery.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

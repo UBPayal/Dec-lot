@@ -1,0 +1,33 @@
+{
+  "name": "decentralized-lottery",
+  "version": "1.0.0",
+  "description": "Decentralized Lottery System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CVScoder/decentralized-lottery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CVScoder/decentralized-lottery/issues"
+  },
+  "homepage": "https://github.com/CVScoder/decentralized-lottery#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.5.0",
+    "ethers": "^6.13.5",
+    "hardhat": "^2.23.0",
+    "tailwindcss": "^4.1.4"
+  },
+  "dependencies": {
+    "animejs": "^4.0.2",
+    "three": "^0.176.0"
+  }
+}
